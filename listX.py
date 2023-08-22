@@ -31,6 +31,10 @@ class FunctionalList(list):
     def modify_range(self, *args):
         """
         Modifies a range of elements within the list by removing and inserting items.
+        :param: arg 1 must be an integer specifying where to start removing
+                element(s).
+        :param: arg 2 must be an integer specifying the number of elements to remove.
+        :param: *args => Any number of elements to be inserted.
         """
         argslen = len(args)
         if argslen == 1:
